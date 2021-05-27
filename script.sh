@@ -62,6 +62,7 @@ weekly_copy () {
 			aws sns publish --topic-arn arn:aws:sns:eu-west-1:902623068040:metermanager-slack --message "AWS Backup Account - weekly copy command has failed!"
 			exit_script
 		fi
+         fi
 }
 
 remove_oldest_weekly_copy() {
